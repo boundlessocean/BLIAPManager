@@ -1,5 +1,5 @@
 PODS:
-  - BLIAPManager (0.1.0)
+  - BLIAPManager (1.0.0)
 
 DEPENDENCIES:
   - BLIAPManager (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  BLIAPManager: 64f55429ebc2f4f2f07748706c05722634539b5d
+  BLIAPManager: e7d9d79a72411c2f91d48632c0127e5208ff4c06
 
 PODFILE CHECKSUM: ad706c2d5d0e9dacb074120e746efe774c9d8247
 

@@ -7,63 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4EFD0E80EFAFF43F11C50CBC06EA7C1D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		4EF601BC18EB37A3FAF47D710114311A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		606C936E279D900AE58526DE4C7DCF46 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		6E7710AE1A4D3225EC83997F6A626FFB /* BLIAPManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EDB1B32187F532D88C24238C7C4C8A9B /* BLIAPManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7017010B6401CCC1DA864358A55A2F9C /* Pods-BLIAPManager_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F3EA3D5C01B554C4EE1C72C471AC49CB /* Pods-BLIAPManager_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8E633BDF2172E7BC00CA4F4C /* BLIAPManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E633BDD2172E7BC00CA4F4C /* BLIAPManager.h */; };
-		8E633BE02172E7BC00CA4F4C /* BLIAPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E633BDE2172E7BC00CA4F4C /* BLIAPManager.m */; };
-		A2906E6DF8E8FB9CA677F97EF3E866E2 /* BLIAPManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F177F5189B46E83222DA10BBE4FB1533 /* BLIAPManager-dummy.m */; };
-		C00A6674DB855AF4B592DC3D9F113E3A /* Pods-BLIAPManager_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BD2ECC2BD96F4982D363FB1A78570CA /* Pods-BLIAPManager_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C74E3E289C38717C1056EF31E5BFC2AF /* Pods-BLIAPManager_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 544BF7FE34B8055273A7DE3A6A25D77A /* Pods-BLIAPManager_Example-dummy.m */; };
+		A1DF71AE01551B0CF44DDFC51BD6F5E7 /* Pods-BLIAPManager_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 544BF7FE34B8055273A7DE3A6A25D77A /* Pods-BLIAPManager_Example-dummy.m */; };
+		A745F3BC48E96F9A009B7F76964BD7F7 /* Pods-BLIAPManager_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BD2ECC2BD96F4982D363FB1A78570CA /* Pods-BLIAPManager_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E98B122F1EB61BA17CD11C4D5BB27856 /* Pods-BLIAPManager_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DF325F6F34A056971602A770EE4F03 /* Pods-BLIAPManager_Tests-dummy.m */; };
-		F46526C3F9C2B032A3CEAA28F91CB830 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		5C75BC967907D2A8312D1915C49C776F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F3910219B850D038024D4DFD230D6154;
-			remoteInfo = BLIAPManager;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		029BA0323056A671A6EA7773638DA80F /* Pods-BLIAPManager_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BLIAPManager_Example-resources.sh"; sourceTree = "<group>"; };
-		05F2FD0FA739594D9500FF138BC0F00C /* BLIAPManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BLIAPManager.xcconfig; sourceTree = "<group>"; };
 		11134EE8EEB210F8D2BFE083F089B1D7 /* Pods-BLIAPManager_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BLIAPManager_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1464B8B8C18A0549CC497BFE2C9A5814 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1482D6D5E70D655C20C7C6D50B50FAF1 /* Pods-BLIAPManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BLIAPManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		18D1F50D095AE6E87E916161A3EFD5F6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19DF325F6F34A056971602A770EE4F03 /* Pods-BLIAPManager_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BLIAPManager_Tests-dummy.m"; sourceTree = "<group>"; };
-		1B5C4460CECC13947A54B3E3326C0FB7 /* BLIAPManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BLIAPManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B61D82171E28786AAFC7D236C0422E /* Pods-BLIAPManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BLIAPManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		325CF07B27ADC0C0D9F21A9E4F99D2D4 /* Pods_BLIAPManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BLIAPManager_Example.framework; path = "Pods-BLIAPManager_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35DD0B8C9B3303E024BC18BC1B091009 /* Pods-BLIAPManager_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BLIAPManager_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		4BD2ECC2BD96F4982D363FB1A78570CA /* Pods-BLIAPManager_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BLIAPManager_Example-umbrella.h"; sourceTree = "<group>"; };
 		51B07F086B4FC30D7A62ED1F3E6C4078 /* Pods-BLIAPManager_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BLIAPManager_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		544BF7FE34B8055273A7DE3A6A25D77A /* Pods-BLIAPManager_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BLIAPManager_Example-dummy.m"; sourceTree = "<group>"; };
-		60D673CD2F0A336682C53DF4ED96EBD0 /* BLIAPManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BLIAPManager-prefix.pch"; sourceTree = "<group>"; };
-		62F834E846F1AC714711C0B984ECCA78 /* Pods_BLIAPManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BLIAPManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65ACD33F37444C021F2CD4E0A37E9E56 /* Pods-BLIAPManager_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BLIAPManager_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6A4EDD9D20091495BF493F2AD84A27A3 /* Pods-BLIAPManager_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BLIAPManager_Example.modulemap"; sourceTree = "<group>"; };
-		6C303245FA706EC529DDDC6B2B1EB426 /* BLIAPManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BLIAPManager.modulemap; sourceTree = "<group>"; };
 		74C0D55E52F305D0BC2A2FE48D22F8F6 /* Pods-BLIAPManager_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BLIAPManager_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		84F7FA8F6470777BE4103425038FB836 /* Pods-BLIAPManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BLIAPManager_Example.release.xcconfig"; sourceTree = "<group>"; };
-		8E633BDD2172E7BC00CA4F4C /* BLIAPManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLIAPManager.h; sourceTree = "<group>"; };
-		8E633BDE2172E7BC00CA4F4C /* BLIAPManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLIAPManager.m; sourceTree = "<group>"; };
+		8509AA9E742A5213A6561F1AB0B35205 /* Pods_BLIAPManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BLIAPManager_Tests.framework; path = "Pods-BLIAPManager_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FF3188A1B2C38EDD550B919BF34297D /* Pods-BLIAPManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BLIAPManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		902D5A227126AD55B333943F8B45E270 /* Pods-BLIAPManager_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BLIAPManager_Tests-resources.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B59105E1CDD657C8CD99BAD9E4672495 /* Pods-BLIAPManager_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BLIAPManager_Tests.modulemap"; sourceTree = "<group>"; };
 		D9F6F15DFAE6AC17CEACFD5F554CD63F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC07F09AF6F3AC96E83022A3488C5B25 /* Pods-BLIAPManager_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BLIAPManager_Example-frameworks.sh"; sourceTree = "<group>"; };
-		EDB1B32187F532D88C24238C7C4C8A9B /* BLIAPManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BLIAPManager-umbrella.h"; sourceTree = "<group>"; };
-		F177F5189B46E83222DA10BBE4FB1533 /* BLIAPManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BLIAPManager-dummy.m"; sourceTree = "<group>"; };
 		F3EA3D5C01B554C4EE1C72C471AC49CB /* Pods-BLIAPManager_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BLIAPManager_Tests-umbrella.h"; sourceTree = "<group>"; };
-		FB76AF766D2C2E871447504E221B0E49 /* Pods_BLIAPManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BLIAPManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,19 +51,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DD86A99AE4FDCBD09FED27532BD19863 /* Frameworks */ = {
+		C3A293A3FBFE24E65D4B8CBE53C08598 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F46526C3F9C2B032A3CEAA28F91CB830 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E0357FE32595F7DD51663EE24647E925 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4EFD0E80EFAFF43F11C50CBC06EA7C1D /* Foundation.framework in Frameworks */,
+				4EF601BC18EB37A3FAF47D710114311A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,18 +80,12 @@
 			path = "Target Support Files/Pods-BLIAPManager_Example";
 			sourceTree = "<group>";
 		};
-		6310B89C4124D6C33412CEE960D2751F /* Support Files */ = {
+		4ABA8885339F967000F4AB3D1E8A07B3 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6C303245FA706EC529DDDC6B2B1EB426 /* BLIAPManager.modulemap */,
-				05F2FD0FA739594D9500FF138BC0F00C /* BLIAPManager.xcconfig */,
-				F177F5189B46E83222DA10BBE4FB1533 /* BLIAPManager-dummy.m */,
-				60D673CD2F0A336682C53DF4ED96EBD0 /* BLIAPManager-prefix.pch */,
-				EDB1B32187F532D88C24238C7C4C8A9B /* BLIAPManager-umbrella.h */,
-				18D1F50D095AE6E87E916161A3EFD5F6 /* Info.plist */,
+				CBFA951EE74E704FE373ADBF83400AEE /* BLIAPManager */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/BLIAPManager";
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		68B0D866291F6023F941C5E106BFF4EC /* Pods-BLIAPManager_Tests */ = {
@@ -148,40 +110,11 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				846D8A6C45589FF383E0C8BC170DD37C /* Development Pods */,
+				4ABA8885339F967000F4AB3D1E8A07B3 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				89A892CCAB7E956174B33FD6265F82EE /* Products */,
+				EF8EB2A518D0997244E20178A7E8DD1D /* Products */,
 				F67C815D9771FFE8AA0CB22A74740E32 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		846D8A6C45589FF383E0C8BC170DD37C /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A93915F95CB2493F69F407235601C553 /* BLIAPManager */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		89A892CCAB7E956174B33FD6265F82EE /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1B5C4460CECC13947A54B3E3326C0FB7 /* BLIAPManager.framework */,
-				62F834E846F1AC714711C0B984ECCA78 /* Pods_BLIAPManager_Example.framework */,
-				FB76AF766D2C2E871447504E221B0E49 /* Pods_BLIAPManager_Tests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		A93915F95CB2493F69F407235601C553 /* BLIAPManager */ = {
-			isa = PBXGroup;
-			children = (
-				6310B89C4124D6C33412CEE960D2751F /* Support Files */,
-				8E633BDD2172E7BC00CA4F4C /* BLIAPManager.h */,
-				8E633BDE2172E7BC00CA4F4C /* BLIAPManager.m */,
-			);
-			name = BLIAPManager;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -192,12 +125,29 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CBFA951EE74E704FE373ADBF83400AEE /* BLIAPManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = BLIAPManager;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		EF8EB2A518D0997244E20178A7E8DD1D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				325CF07B27ADC0C0D9F21A9E4F99D2D4 /* Pods_BLIAPManager_Example.framework */,
+				8509AA9E742A5213A6561F1AB0B35205 /* Pods_BLIAPManager_Tests.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		F67C815D9771FFE8AA0CB22A74740E32 /* Targets Support Files */ = {
@@ -212,20 +162,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		494AA8F93BA5C7A273B5455C8F062A65 /* Headers */ = {
+		2960E41E8A8998CDD88C22A9D2ED190E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C00A6674DB855AF4B592DC3D9F113E3A /* Pods-BLIAPManager_Example-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EF6BC2B871C1F3A9DC32935A9206BBB8 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6E7710AE1A4D3225EC83997F6A626FFB /* BLIAPManager-umbrella.h in Headers */,
-				8E633BDF2172E7BC00CA4F4C /* BLIAPManager.h in Headers */,
+				A745F3BC48E96F9A009B7F76964BD7F7 /* Pods-BLIAPManager_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,22 +181,21 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		40D93F65740781B976660EDDF83A9DFD /* Pods-BLIAPManager_Example */ = {
+		BEA8B1D8C441609C09AED98A8300CEFC /* Pods-BLIAPManager_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3BB786CB2101F4381D721BD2653F4316 /* Build configuration list for PBXNativeTarget "Pods-BLIAPManager_Example" */;
+			buildConfigurationList = 3948703967DD970857A427ADD945FFDB /* Build configuration list for PBXNativeTarget "Pods-BLIAPManager_Example" */;
 			buildPhases = (
-				9D5CDD55CFFAC45D6BE662CD1EF8B5BD /* Sources */,
-				E0357FE32595F7DD51663EE24647E925 /* Frameworks */,
-				494AA8F93BA5C7A273B5455C8F062A65 /* Headers */,
+				42D46C4FB554575D8AC7B9D56A51B6DF /* Sources */,
+				C3A293A3FBFE24E65D4B8CBE53C08598 /* Frameworks */,
+				2960E41E8A8998CDD88C22A9D2ED190E /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A3E2A152EF31DABA35EB0E79442C385E /* PBXTargetDependency */,
 			);
 			name = "Pods-BLIAPManager_Example";
 			productName = "Pods-BLIAPManager_Example";
-			productReference = 62F834E846F1AC714711C0B984ECCA78 /* Pods_BLIAPManager_Example.framework */;
+			productReference = 325CF07B27ADC0C0D9F21A9E4F99D2D4 /* Pods_BLIAPManager_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C5110EEB580558819AF3A23CF0551326 /* Pods-BLIAPManager_Tests */ = {
@@ -272,24 +212,7 @@
 			);
 			name = "Pods-BLIAPManager_Tests";
 			productName = "Pods-BLIAPManager_Tests";
-			productReference = FB76AF766D2C2E871447504E221B0E49 /* Pods_BLIAPManager_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		F3910219B850D038024D4DFD230D6154 /* BLIAPManager */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6053EC69C39D766D3AD24662567E1F67 /* Build configuration list for PBXNativeTarget "BLIAPManager" */;
-			buildPhases = (
-				B3C08DDC673036A1FD12400089F34726 /* Sources */,
-				DD86A99AE4FDCBD09FED27532BD19863 /* Frameworks */,
-				EF6BC2B871C1F3A9DC32935A9206BBB8 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = BLIAPManager;
-			productName = BLIAPManager;
-			productReference = 1B5C4460CECC13947A54B3E3326C0FB7 /* BLIAPManager.framework */;
+			productReference = 8509AA9E742A5213A6561F1AB0B35205 /* Pods_BLIAPManager_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -309,32 +232,22 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 89A892CCAB7E956174B33FD6265F82EE /* Products */;
+			productRefGroup = EF8EB2A518D0997244E20178A7E8DD1D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F3910219B850D038024D4DFD230D6154 /* BLIAPManager */,
-				40D93F65740781B976660EDDF83A9DFD /* Pods-BLIAPManager_Example */,
+				BEA8B1D8C441609C09AED98A8300CEFC /* Pods-BLIAPManager_Example */,
 				C5110EEB580558819AF3A23CF0551326 /* Pods-BLIAPManager_Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9D5CDD55CFFAC45D6BE662CD1EF8B5BD /* Sources */ = {
+		42D46C4FB554575D8AC7B9D56A51B6DF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C74E3E289C38717C1056EF31E5BFC2AF /* Pods-BLIAPManager_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B3C08DDC673036A1FD12400089F34726 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8E633BE02172E7BC00CA4F4C /* BLIAPManager.m in Sources */,
-				A2906E6DF8E8FB9CA677F97EF3E866E2 /* BLIAPManager-dummy.m in Sources */,
+				A1DF71AE01551B0CF44DDFC51BD6F5E7 /* Pods-BLIAPManager_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,49 +261,10 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		A3E2A152EF31DABA35EB0E79442C385E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = BLIAPManager;
-			target = F3910219B850D038024D4DFD230D6154 /* BLIAPManager */;
-			targetProxy = 5C75BC967907D2A8312D1915C49C776F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		032667F72BE6837127D1C7E7CB1AD0C4 /* Release */ = {
+		24F56A530BB7DFCA97C55F8A7D68ED0C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 05F2FD0FA739594D9500FF138BC0F00C /* BLIAPManager.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/BLIAPManager/BLIAPManager-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BLIAPManager/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/BLIAPManager/BLIAPManager.modulemap";
-				PRODUCT_NAME = BLIAPManager;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		24DEF3D9D45C3B62A63F6D654A35D6E7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84F7FA8F6470777BE4103425038FB836 /* Pods-BLIAPManager_Example.release.xcconfig */;
+			baseConfigurationReference = 1482D6D5E70D655C20C7C6D50B50FAF1 /* Pods-BLIAPManager_Example.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -414,36 +288,6 @@
 				PRODUCT_NAME = Pods_BLIAPManager_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		3624E14ECEC75238E564751D01F8301E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 05F2FD0FA739594D9500FF138BC0F00C /* BLIAPManager.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/BLIAPManager/BLIAPManager-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BLIAPManager/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/BLIAPManager/BLIAPManager.modulemap";
-				PRODUCT_NAME = BLIAPManager;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -604,9 +448,9 @@
 			};
 			name = Release;
 		};
-		8C1E53C3D03CC23AA5C49C07B9969C03 /* Debug */ = {
+		90F1F92D2DC44612CE87982FF773DC36 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1482D6D5E70D655C20C7C6D50B50FAF1 /* Pods-BLIAPManager_Example.debug.xcconfig */;
+			baseConfigurationReference = 84F7FA8F6470777BE4103425038FB836 /* Pods-BLIAPManager_Example.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -631,10 +475,11 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		97D44D692200DB2E1A1C555B3A346D29 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -680,20 +525,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3BB786CB2101F4381D721BD2653F4316 /* Build configuration list for PBXNativeTarget "Pods-BLIAPManager_Example" */ = {
+		3948703967DD970857A427ADD945FFDB /* Build configuration list for PBXNativeTarget "Pods-BLIAPManager_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8C1E53C3D03CC23AA5C49C07B9969C03 /* Debug */,
-				24DEF3D9D45C3B62A63F6D654A35D6E7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6053EC69C39D766D3AD24662567E1F67 /* Build configuration list for PBXNativeTarget "BLIAPManager" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3624E14ECEC75238E564751D01F8301E /* Debug */,
-				032667F72BE6837127D1C7E7CB1AD0C4 /* Release */,
+				24F56A530BB7DFCA97C55F8A7D68ED0C /* Debug */,
+				90F1F92D2DC44612CE87982FF773DC36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

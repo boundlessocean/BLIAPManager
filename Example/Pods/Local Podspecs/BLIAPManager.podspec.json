@@ -1,9 +1,9 @@
 {
   "name": "BLIAPManager",
-  "version": "0.1.0",
-  "summary": "A short description of BLIAPManager.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/boundlessocean@icloud.com/BLIAPManager",
+  "version": "1.0.0",
+  "summary": "BLIAPManager",
+  "description": "BLIAPManager内购管理工具",
+  "homepage": "https://github.com/boundlessocean/BLIAPManager",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,12 @@
     "boundlessocean@icloud.com": "boundlessoean@icloud.com"
   },
   "source": {
-    "git": "https://github.com/boundlessocean@icloud.com/BLIAPManager.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/boundlessocean/BLIAPManager.git",
+    "tag": "1.0.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "BLIAPManager/Classes/**/*"
+  "source_files": "BLIAPManager/Classes/**/*",
+  "frameworks": "StoreKit"
 }
