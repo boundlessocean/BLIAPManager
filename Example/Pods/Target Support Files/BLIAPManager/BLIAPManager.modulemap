@@ -1,0 +1,6 @@
+framework module BLIAPManager {
+  umbrella header "BLIAPManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

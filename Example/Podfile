@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'BLIAPManager_Example' do
+  pod 'BLIAPManager', :path => '../'
+
+  target 'BLIAPManager_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
