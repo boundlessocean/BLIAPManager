@@ -1,6 +1,6 @@
 {
   "name": "BLIAPManager",
-  "version": "4.0.1",
+  "version": "1.0.1",
   "summary": "BLIAPManager",
   "description": "BLIAPManager内购管理工具",
   "homepage": "https://github.com/boundlessocean/BLIAPManager",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/boundlessocean/BLIAPManager.git",
-    "tag": "4.0.1"
+    "tag": "1.0.1"
   },
   "platforms": {
     "ios": "8.0"

@@ -13,13 +13,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // 第一步
     [[BLIAPManager shareIAPManager] configTransactionObserver];
     [[BLIAPManager shareIAPManager] handleUnfinishTransaction:^(NSMutableArray<BLIAPTransactionOrder *> *transactionOrder) {
         for (BLIAPTransactionOrder *order in transactionOrder) {
-//            [APPViewController IAP_requestCheakReceipt:order];
-            NSLog(@"%@",data);
+            [APPViewController IAP_requestCheakReceipt:order];
         }
-       
     }];
     
     return YES;

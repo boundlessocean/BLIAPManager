@@ -34,6 +34,19 @@
 {
     [super viewDidLoad];
     
+    [self requestProductList];
+    
+}
+
+- (IBAction)charge:(id)sender {
+    [self IAP_requestOrder];
+}
+
+// 第二步
+/**
+ 请求产品列表
+ */
+- (void)requestProductList{
     [NetWork GET_URL:URL_webServer(api_pay_price)
         parameterDic:@{@"client":@"IOS"}
         successBlock:^(NSDictionary *responseObject) {
@@ -42,13 +55,9 @@
         } failureBlock:nil];
 }
 
-- (IBAction)charge:(id)sender {
-    [self IAP_requestOrder];
-}
-
-
 
 #pragma mark - - In-App Purchase
+// 第三步
 /**
  检查产品合规性
  */
@@ -75,7 +84,7 @@
                                              }
                                          }];
 }
-
+// 第四步
 /**
  生成订单
  */
@@ -99,7 +108,7 @@
          } failureBlock:nil];
 }
 
-
+// 第五步
 /**
  向iTunes发起交易
  */
@@ -132,12 +141,15 @@
          }
      }];
 }
-
+// 第六步
 /**
  通知服务器校验凭证
  */
 + (void)IAP_requestCheakReceipt:(BLIAPTransactionOrder *)transactionOrder{
     NSDictionary *order = [transactionOrder.oderJson mj_JSONObject];
+    if (!transactionOrder.receiptData) {
+        return;
+    }
     NSMutableDictionary *parameters = [@{@"chargeTypeId" : order[@"chargeTypeId"],
                                          @"paymentType" : @"6",
                                          @"order" : order[@"oderID"],
@@ -151,6 +163,7 @@
          successBlock:^(NSDictionary *responseObject) {
              if ([responseObject[@"code"] integerValue] == 100000) {
                  [BLIAPManager finishTransaction:transactionOrder.oderJson];
+                 
              } else if ([responseObject[@"code"] integerValue] == 100602){
                  [BLIAPManager finishTransaction:transactionOrder.oderJson];
                  NSInteger code = [[responseObject[@"msg"] mj_JSONObject][@"status"] integerValue];
