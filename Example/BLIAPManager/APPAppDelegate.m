@@ -8,13 +8,24 @@
 
 #import "APPAppDelegate.h"
 
+#import "APPViewController.h"
 @implementation APPAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [[BLIAPManager shareIAPManager] configTransactionObserver];
+    [[BLIAPManager shareIAPManager] handleUnfinishTransaction:^(NSMutableArray<BLIAPTransactionOrder *> *transactionOrder) {
+        for (BLIAPTransactionOrder *order in transactionOrder) {
+//            [APPViewController IAP_requestCheakReceipt:order];
+            NSLog(@"%@",data);
+        }
+       
+    }];
+    
     return YES;
 }
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

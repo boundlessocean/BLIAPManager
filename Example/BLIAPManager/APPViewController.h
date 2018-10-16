@@ -8,6 +8,16 @@
 
 @import UIKit;
 
+#import "BLIAPManager.h"
 @interface APPViewController : UIViewController
 
+/**
+ 通知服务器校验凭证
+ */
++ (void)IAP_requestCheakReceipt:(BLIAPTransactionOrder *)transactionOrder;
+@end
+@interface MTRechargeModel : NSObject
+@property (nonatomic, assign) NSInteger id;
+@property (nonatomic, strong) NSString * money;
+@property (nonatomic, strong) NSString *goldcoin;
 @end

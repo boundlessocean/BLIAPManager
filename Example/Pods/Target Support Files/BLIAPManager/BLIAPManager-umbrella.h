@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "BLIAPManager.h"
 
 FOUNDATION_EXPORT double BLIAPManagerVersionNumber;
 FOUNDATION_EXPORT const unsigned char BLIAPManagerVersionString[];

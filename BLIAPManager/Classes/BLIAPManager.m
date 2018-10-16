@@ -47,10 +47,10 @@
     _cheakComplete = cheakComplete;
     _productRequest = [[SKProductsRequest alloc] initWithProductIdentifiers:productIdentifiers];
     _productRequest.delegate = self;
+    [_productRequest start];
 }
 
 - (void)requestPayment:(NSString *)oderJson
-       userIdentifiers:(NSString *)userIdentifiers
     productIdentifiers:(NSString *)productIdentifiers
               complete:(void (^)(BLIAPTransactionOrder * ,BLIAPError ))transactionComplete{
     _transactionsHandle = nil;
@@ -69,8 +69,7 @@
         // 匹配到产品
         if (productMacth) {
             _payment = [SKMutablePayment paymentWithProduct:productMacth];
-            _payment.applicationUsername = [self hashedValueForAccountName:userIdentifiers];
-            _payment.productIdentifier = oderJson;
+            _payment.applicationUsername = oderJson;
             [[SKPaymentQueue defaultQueue] addPayment:_payment];
         } else {
         // 未匹配到产品
@@ -103,13 +102,10 @@
     !complete ? : complete(nil,error);
 }
 
-- (void)finishTransaction:(NSString *)orderJson{
-    for (SKPaymentTransaction *transaction in [SKPaymentQueue defaultQueue].transactions) {
-        if ([transaction.payment.productIdentifier isEqualToString:orderJson] &&
-            transaction.transactionState == SKPaymentTransactionStatePurchased) {
-            [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
-            break;
-        }
++ (void)finishTransaction:(NSString *)orderJson{
+    NSArray<SKPaymentTransaction *> *transactions = [[SKPaymentQueue defaultQueue].transactions filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"payment.applicationUsername CONTAINS %@",orderJson]];
+    if (transactions.count) {
+        [[SKPaymentQueue defaultQueue] finishTransaction:transactions.firstObject];
     }
 }
 
@@ -145,9 +141,12 @@ didFailWithError:(NSError *)error{
             }
             case SKPaymentTransactionStateFailed:
                 error = BLIAPErrorTransactionStateFailed;
+                [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
                 break;
-            default:
-                break;
+            case SKPaymentTransactionStatePurchasing:
+            case SKPaymentTransactionStateDeferred:
+            case SKPaymentTransactionStateRestored:
+                return;
         }
     }
     if (_transactionsHandle && unFinishTransactions.count) {
@@ -163,9 +162,8 @@ didFailWithError:(NSError *)error{
 - (BLIAPTransactionOrder *)initializeOrder:(SKPaymentTransaction *)transaction{
     NSURL *rereceiptURL = [[NSBundle mainBundle] appStoreReceiptURL];
     NSData *receiptData = [NSData dataWithContentsOfURL:rereceiptURL];
-    [receiptData base64EncodedStringWithOptions:0];
     BLIAPTransactionOrder *order = [BLIAPTransactionOrder new];
-    order.oderJson = transaction.payment.productIdentifier;
+    order.oderJson = transaction.payment.applicationUsername;
     order.receiptData = [receiptData base64EncodedStringWithOptions:0];
     return order;
 }
@@ -174,12 +172,7 @@ didFailWithError:(NSError *)error{
 - (NSString *)hashedValueForAccountName:(NSString*)userAccountName{
     
     if (!userAccountName) {
-        userAccountName = [[NSUbiquitousKeyValueStore defaultStore] objectForKey:[[NSBundle mainBundle].bundleIdentifier stringByAppendingString:@"userAccountName"]];
-        if (!userAccountName) {
-            userAccountName = [UIDevice currentDevice].identifierForVendor.UUIDString;
-            [[NSUbiquitousKeyValueStore defaultStore] setObject:userAccountName forKey:[[NSBundle mainBundle].bundleIdentifier stringByAppendingString:@"userAccountName"]];
-            [[NSUbiquitousKeyValueStore defaultStore] synchronize];
-        }
+        userAccountName = BLIAPManager.deviceUDID;
     }
     const int HASH_SIZE = 32;
     unsigned char hashedChars[HASH_SIZE];
@@ -200,6 +193,16 @@ didFailWithError:(NSError *)error{
     return userAccountHash;
 }
 
+
++ (NSString *)deviceUDID{
+    NSString *deviceUDID = [[NSUbiquitousKeyValueStore defaultStore] objectForKey:[[NSBundle mainBundle].bundleIdentifier stringByAppendingString:@"deviceUDID"]];
+    if (!deviceUDID) {
+        deviceUDID = [UIDevice currentDevice].identifierForVendor.UUIDString;
+        [[NSUbiquitousKeyValueStore defaultStore] setObject:deviceUDID forKey:[[NSBundle mainBundle].bundleIdentifier stringByAppendingString:@"deviceUDID"]];
+        [[NSUbiquitousKeyValueStore defaultStore] synchronize];
+    }
+    return deviceUDID;
+}
 @end
 
 

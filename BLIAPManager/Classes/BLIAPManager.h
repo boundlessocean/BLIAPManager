@@ -26,6 +26,10 @@ typedef NS_ENUM(NSInteger ,BLIAPError){
 
 + (instancetype)shareIAPManager;
 
+/**
+ 获取设备唯一标识
+ */
++ (NSString *)deviceUDID;
 
 // ----------------------------------------------------------------
 // ------------- 第一部分 在AppDelegate处理交易未完成的订单 -------------
@@ -66,12 +70,10 @@ typedef NS_ENUM(NSInteger ,BLIAPError){
  对具体产品发起购买
 
  @param oderJson 服务器返回的订单
- @param userIdentifiers 用户的唯一标识，登录状态下传userid，未登录状态传nil(默认为uuid)或者其他唯一标识
  @param productIdentifiers 产品标识
  @param transactionComplete 完成与iTunes交易回调
  */
 - (void)requestPayment:(NSString *)oderJson
-       userIdentifiers:(NSString *)userIdentifiers
     productIdentifiers:(NSString *)productIdentifiers
               complete:(void(^)(BLIAPTransactionOrder *transactionOrder,
                                 BLIAPError error))transactionComplete;
@@ -99,13 +101,14 @@ typedef NS_ENUM(NSInteger ,BLIAPError){
 
  @param orderJson 订单
  */
-- (void)finishTransaction:(NSString *)orderJson;
++ (void)finishTransaction:(NSString *)orderJson;
+
 
 @end
 
 @interface BLIAPTransactionOrder : NSObject
 /** 订单信息 */
 @property (nonatomic ,strong) NSString *oderJson;
-/** base64编码后的票据 */
+/** 票据 */
 @property (nonatomic ,strong) NSString *receiptData;
 @end
