@@ -165,6 +165,8 @@ didFailWithError:(NSError *)error{
     BLIAPTransactionOrder *order = [BLIAPTransactionOrder new];
     order.oderJson = transaction.payment.applicationUsername;
     order.receiptData = [receiptData base64EncodedStringWithOptions:0];
+    order.productID = transaction.payment.productIdentifier;
+    order.transactionID = transaction.transactionIdentifier;
     return order;
 }
 

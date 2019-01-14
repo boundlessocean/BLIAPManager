@@ -111,4 +111,8 @@ typedef NS_ENUM(NSInteger ,BLIAPError){
 @property (nonatomic ,strong) NSString *oderJson;
 /** 票据 */
 @property (nonatomic ,strong) NSString *receiptData;
+/** 交易id */
+@property (nonatomic, strong) NSString *transactionID;
+/** 产品ID */
+@property (nonatomic, strong) NSString *productID;
 @end
